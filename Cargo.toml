@@ -1,0 +1,6 @@
+[package]
+name = "rust_fingerings"
+version = "0.1.0"
+authors = ["Mike Sperone (from my MBP) <mike@mikesperone.com>"]
+
+[dependencies]
