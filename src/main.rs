@@ -2,13 +2,14 @@ use std::fs::OpenOptions;
 use std::io::prelude::*;
 
 fn main() {
-    // println!("Hello, world!");
+    println!("Hello, world!");
     let mut value: i32 = 0;
     let mut count: i32 = 0;
     let MAX_KEYS = 10;
     let mut file = OpenOptions::new()
+        .create(true)
         .append(true)
-        .open("fingerings.txt")
+        .open("fingerings.csv")
         .unwrap();
 
     while value < 8388607 {
@@ -46,4 +47,3 @@ fn main() {
     }
     println!("{} fingerings found", count);
 }
-
